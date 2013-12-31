@@ -1,0 +1,9 @@
+= form_for @submission do |f|
+  .field
+    = f.label :source_code
+    = f.text_area :source_code
+  .field
+    = f.label :test_code
+    = f.text_area :test_code
+  .actions
+    = f.submit

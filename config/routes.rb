@@ -1,4 +1,13 @@
 Nine61::Application.routes.draw do
+
+  get '/submissions/new' => 'submissions#new', as: :new_submission
+  get '/submissions' => 'submissions#index', as: :submissions
+  post '/submissions/' => 'submissions#create'
+  get '/submissions/:id' => 'submissions#show'
+
+  root :to => 'submissions#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

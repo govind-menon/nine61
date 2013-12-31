@@ -1,0 +1,3 @@
+- @submissions.each do |submission|
+  %p= link_to submission.id, {:id => submission.id, :action => 'show'}
+%p= link_to 'New Submission', new_submission_path
